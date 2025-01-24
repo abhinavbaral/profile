@@ -1,15 +1,15 @@
-
-import Header from './components/Header';
-import Home from './components/Home';
+// pages/index.js
+import Head from 'next/head';
+import Header from '../components/Header';
+import ProfileSection from '../components/ProfileSection';
 
 export default function Page() {
   return (
     <div>
+
+
       <Header />
-      <main>
-        <Home />
-      </main>
-      <h1 className="text-center mt-5">Welcome to My Portfolio</h1>
+      <ProfileSection />
     </div>
   );
 }

@@ -1,14 +1,15 @@
 // components/Header.js
+import Logo from './Logo';
+
 export default function Header() {
-    return (
-      <header className="fixed top-0 left-0 w-full py-4 px-8 bg-transparent z-50 flex justify-between items-center">
-        <a
-          href="https://abhinavbaral.vercel.app/"
-          className="text-3xl font-bold text-red-500 hover:scale-110 transition-transform"
-        >
-          Abhinav
-        </a>
-      </header>
-    );
-  }
-  
+  return (
+    <header className="flex justify-between items-center p-6 bg-black text-white">
+      <Logo />
+      <nav className="flex space-x-6">
+        <a href="#" className="hover:text-red-500">Home</a>
+        <a href="#" className="hover:text-red-500">About</a>
+        <a href="#" className="hover:text-red-500">Contact</a>
+      </nav>
+    </header>
+  );
+}
