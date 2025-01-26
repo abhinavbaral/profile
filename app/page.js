@@ -1,15 +1,15 @@
 // pages/index.js
-import Head from 'next/head';
-import Header from '../components/Header';
-import ProfileSection from '../components/ProfileSection';
+// import Head from 'next/head';
+import React from 'react';
+import ProfileSection from './components/ProfileSection';
+import Header from './components/Header';
+
 
 export default function Page() {
   return (
     <div>
-
-
-      <Header />
-      <ProfileSection />
+      <Header/>
+      <ProfileSection/>
     </div>
   );
 }
