@@ -15,7 +15,7 @@ export default function ProfileSection() {
         roleRef.current.textContent = roles[index];
         index = (index + 1) % roles.length;
       }
-    }, 15000);
+    }, 1000);
   };
 
   return (
